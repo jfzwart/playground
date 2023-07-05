@@ -1,6 +1,9 @@
 {
-  "*.js": "prettier --write",
-  "*.jsx": "prettier --write",
-  "*.ts": "prettier --write",
-  "*.tsx": "prettier --write"
+  "*.js": ["prettier --write", "jest --findRelatedTests"],
+  "*.jsx": ["prettier --write", "jest --findRelatedTests"],
+  "*.ts": [
+    "prettier --write",
+    "jest --findRelatedTests --passWithNoTests"
+  ],
+  "*.tsx": ["prettier --write", "jest --findRelatedTests"]
 }
