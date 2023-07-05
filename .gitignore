@@ -7,6 +7,7 @@
 
 # testing
 /coverage
+/jest.config.js
 
 # next.js
 /.next/
@@ -18,6 +19,7 @@
 # misc
 .DS_Store
 *.pem
+*.log
 
 # debug
 npm-debug.log*
@@ -25,6 +27,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
 .env*.local
 
 # vercel
@@ -33,3 +36,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDE specific
+.vscode/
+
+# storybook
+/storybook-static/
